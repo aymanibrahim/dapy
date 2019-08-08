@@ -82,7 +82,7 @@ Change current directory to **dapy** directory
 cd dapy
 ```
 ### 2.3: Install Python with required packages
-Install Python 3.7 with the required packages into an environment named _pyds_  as per [environment.yml](https://github.com/aymanibrahim/dapy/blob/master/environment.yml) YAML file.
+Install Python 3.7 with the required packages into an environment named _dapy_  as per [environment.yml](https://github.com/aymanibrahim/dapy/blob/master/environment.yml) YAML file.
 ```
 conda env create -f environment.yml
 ```
