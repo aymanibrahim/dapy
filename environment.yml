@@ -7,5 +7,6 @@ dependencies:
   - matplotlib
   - seaborn
   - pandas
+  - statsmodels
   - jupyterlab
   - rise
