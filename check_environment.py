@@ -1,6 +1,6 @@
 import importlib
 
-packages = ['numpy', 'matplotlib', 'pandas', 'seaborn', 'statsmodels', 'jupyterlab', 'rise']
+packages = ['numpy', 'matplotlib', 'pandas', 'seaborn', 'statsmodels', 'sklearn', 'jupyterlab', 'rise']
 
 bad = []
 for package in packages:

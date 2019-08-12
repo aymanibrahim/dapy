@@ -8,5 +8,6 @@ dependencies:
   - seaborn
   - pandas
   - statsmodels
+  - scikit-learn
   - jupyterlab
   - rise
