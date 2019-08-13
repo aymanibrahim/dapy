@@ -94,11 +94,17 @@ Change the current default environment (_base_) into _dapy_ environment.
 conda activate dapy
 ```
 
-## 4: Install ipywidgets 
+## 4: Install & Enable ipywidgets extentions
 Install ipywidgets JupyterLab extension
 ```
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
+
+Enable  widgetsnbextension
+```
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
+```
+
 
 ## 5: Check installation
 Use [check_environment.py](https://github.com/aymanibrahim/dapy/blob/master/check_environment.py) script to make sure everything was installed correctly, open a terminal, and change its directory (cd) so that your working directory is the workshop directory _dapy_ you cloned or downloaded. Then enter the following:
