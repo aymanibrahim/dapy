@@ -1,4 +1,5 @@
 import importlib
+import os
 
 packages = ['numpy', 'matplotlib', 'pandas', 'seaborn', 'statsmodels', 'sklearn', 'nodejs', 'ipywidgets', 'jupyterlab', 'rise']
 
@@ -7,7 +8,13 @@ for package in packages:
     try:
         importlib.import_module(package)
     except ImportError:
-        bad.append(f"Can't import {package}")
+        if package == 'nodejs':
+            if os.system("node --version") == 0:
+                pass
+        else:  
+            if package == 'nodejs':
+                print('nodejs is not installed')
+            bad.append(f"Can't import {package}")
 else:
     if len(bad) > 0:
         print('Your workshop environment is not yet fully set up:')

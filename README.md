@@ -93,7 +93,14 @@ Change the current default environment (_base_) into _dapy_ environment.
 ```
 conda activate dapy
 ```
-## 4: Check installation
+
+## 4: Install ipywidgets 
+Install ipywidgets JupyterLab extension
+```
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+```
+
+## 5: Check installation
 Use [check_environment.py](https://github.com/aymanibrahim/dapy/blob/master/check_environment.py) script to make sure everything was installed correctly, open a terminal, and change its directory (cd) so that your working directory is the workshop directory _dapy_ you cloned or downloaded. Then enter the following:
 ```
 python check_environment.py
@@ -101,7 +108,7 @@ python check_environment.py
 If everything is OK, you will get the following message:
 > Your workshop environment is set up
 
-## 5: Start JupyterLab
+## 6: Start JupyterLab
 Start JupyterLab using:
 ```
 jupyter lab
@@ -110,10 +117,10 @@ JupyterLab will open automatically in your browser.
 
 You may access JupyterLab by entering the notebook server’s URL into the browser.
 
-## 6: Stop JupyterLab
+## 7: Stop JupyterLab
 Press **CTRL + C** in the terminal to stop JupyterLab.
 
-## 7: Deactivate environment
+## 8: Deactivate environment
 Change the current environment (_dapy_) into the previous environment.
 ```
 conda deactivate
