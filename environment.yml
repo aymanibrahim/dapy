@@ -9,6 +9,7 @@ dependencies:
   - pandas
   - statsmodels
   - scikit-learn
+  - nodejs
   - ipywidgets
   - jupyterlab
   - rise
