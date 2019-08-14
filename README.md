@@ -55,6 +55,8 @@ The workshop will cover core topics:
 - Grid Search
 - Model Refinement
 
+# Prerequisite
+- [Python for Data Science Workshop](https://github.com/aymanibrahim/pyds
 
 # Pre-workshop 
 
