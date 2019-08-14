@@ -7,7 +7,6 @@ dependencies:
   - matplotlib
   - seaborn
   - pandas
-  - statsmodels
   - scikit-learn
   - nodejs
   - ipywidgets
