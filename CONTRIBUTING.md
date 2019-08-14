@@ -10,14 +10,14 @@ Following these guidelines helps to communicate that you respect the time of the
 
 Fork, then clone the repo:
 
-    git clone git@github.com:your-username/pyds.git
+    git clone git@github.com:your-username/dapy.git
 
-[Set up your machine](https://github.com/aymanibrahim/pyds#pre-workshop)
+[Set up your machine](https://github.com/aymanibrahim/dapy#pre-workshop)
 
 
 Push to your fork and [submit a pull request][pr].
 
-[pr]: https://github.com/aymanibrahim/pyds/compare/
+[pr]: https://github.com/aymanibrahim/dapy/compare/
 
 At this point you're waiting on us. We like to at least comment on pull requests. 
 
