@@ -97,6 +97,18 @@ conda activate dapy
 ```
 
 ## 4: Install & Enable ipywidgets extentions
+
+Enable ipywidgets Jupyter Notebook extension
+
+```
+jupyter contrib nbextension install --user
+jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension enable python-markdown/main
+
+# Notebooks w/ extensions that auto-run code must be "trusted" to work the first time
+jupyter trust ./notebooks/05_Model_Evaluation.ipynb
+```
+
 Install ipywidgets JupyterLab extension
 ```
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
