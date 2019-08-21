@@ -10,7 +10,7 @@ dependencies:
   - scikit-learn
   - nodejs
   - ipywidgets
-  - widgetsnbextensions
+  - widgetsnbextension
   - jupyter_contrib_nbextensions
   - jupyterlab
   - rise
