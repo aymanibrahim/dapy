@@ -2,13 +2,13 @@ FROM buildpack-deps:bionic
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get -qq update && \\
-    apt-get -qq install --yes --no-install-recommends locales > /dev/null && \\    
-    apt-get -qq purge && \\    
-    apt-get -qq clean && \\    
+RUN apt-get -qq update && \
+    apt-get -qq install --yes --no-install-recommends locales > /dev/null && \    
+    apt-get -qq purge && \    
+    apt-get -qq clean && \    
     rm -rf /var/lib/apt/lists/*
 
-RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \\
+RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
     locale-gen
 
 ENV LC_ALL en_US.UTF-8
@@ -29,15 +29,15 @@ ENV HOME /home/${NB_USER}
 
 RUN adduser --disabled-password --gecos "Default user" --uid ${NB_UID} ${NB_USER}
 
-RUN wget --quiet -O - https://deb.nodesource.com/gpgkey/nodesource.gpg.key |  apt-key add - && \\
-    DISTRO="bionic" && \\    
-    echo "deb https://deb.nodesource.com/node_10.x $DISTRO main" >> /etc/apt/sources.list.d/nodesource.list && \\    
+RUN wget --quiet -O - https://deb.nodesource.com/gpgkey/nodesource.gpg.key |  apt-key add - && \
+    DISTRO="bionic" && \    
+    echo "deb https://deb.nodesource.com/node_10.x $DISTRO main" >> /etc/apt/sources.list.d/nodesource.list && \    
     echo "deb-src https://deb.nodesource.com/node_10.x $DISTRO main" >> /etc/apt/sources.list.d/nodesource.list
 
-RUN apt-get -qq update && \\    
-    apt-get -qq install --yes --no-install-recommends less nodejs unzip > /dev/null && \\    
-    apt-get -qq purge && \\    
-    apt-get -qq clean && \\    
+RUN apt-get -qq update && \    
+    apt-get -qq install --yes --no-install-recommends less nodejs unzip > /dev/null && \    
+    apt-get -qq purge && \    
+    apt-get -qq clean && \    
     rm -rf /var/lib/apt/lists/*
 
 EXPOSE 8888
@@ -68,7 +68,7 @@ RUN npm config --global set prefix ${NPM_DIR}
 
 USER root
 
-RUN bash /tmp/install-miniconda.bash && \\
+RUN bash /tmp/install-miniconda.bash && \
     rm /tmp/install-miniconda.bash /tmp/environment.yml
 
 ARG REPO_DIR=${HOME}
@@ -89,8 +89,8 @@ RUN chown -R ${NB_USER}:${NB_USER} ${REPO_DIR}
 
 USER ${NB_USER}
 
-RUN conda env update -p ${NB_PYTHON_PREFIX} -f "environment.yml" && \\
-    conda clean --all -f -y && \\
+RUN conda env update -p ${NB_PYTHON_PREFIX} -f "environment.yml" && \
+    conda clean --all -f -y && \
     conda list -p ${NB_PYTHON_PREFIX}
 
 USER root
