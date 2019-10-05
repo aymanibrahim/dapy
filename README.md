@@ -78,7 +78,7 @@ git clone git@github.com:aymanibrahim/dapy.git
 ```
 OR [Download the repository as a .zip file](https://github.com/aymanibrahim/dapy/archive/master.zip)
 
-### 2.2: Change directory to pyds
+### 2.2: Change directory to dapy
 Change current directory to **dapy** directory
 ```
 cd dapy
