@@ -28,14 +28,14 @@ The workshop will cover core topics:
 ## [02 Data Wrangling](https://github.com/aymanibrahim/dapy/blob/master/notebooks/02_Data_Wrangling.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aymanibrahim/dapy/blob/master/notebooks/02_Data_Wrangling.ipynb)
 - Identify and Handle Missing Values
 - Data Formatting
-- Data Normalization Sets
+- Data Normalization 
 - Binning
 - Indicator variables
 
 ## [03 EDA](https://github.com/aymanibrahim/dapy/blob/master/notebooks/03_EDA.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aymanibrahim/dapy/blob/master/notebooks/03_EDA.ipynb)
 
 - Descriptive Statistics
-- Basic of Grouping
+- Basics of Grouping
 - ANOVA
 - Correlation
 
