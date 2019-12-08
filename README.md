@@ -53,7 +53,6 @@ The workshop will cover core topics:
 - Over-fitting, Under-fitting and Model Selection
 - Ridge Regression
 - Grid Search
-- Model Refinement
 
 # Prerequisite
 - [Python for Data Science Workshop](https://github.com/aymanibrahim/pyds)
