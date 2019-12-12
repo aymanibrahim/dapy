@@ -1,3 +1,5 @@
+![](./images/01_Intro/01_problem/dapy-1.png)
+
 ## Quick Start
 
 The workshop code is available as [Jupyter notebooks](https://github.com/aymanibrahim/dapy/tree/master/notebooks). You can run the notebooks in the cloud (no installation required) by clicking the "launch binder" button:
@@ -8,17 +10,24 @@ The workshop code is available as [Jupyter notebooks](https://github.com/aymanib
 For people who struggle to start in data analysis with Python
 
 # Description
+![](./images/01_Intro/01_problem/dapy-2.png)
+
 This hands-on in-person workshop is based on 
 [Data Analysis with Python Course by IBM Cognitive Class](https://cognitiveclass.ai/courses/data-analysis-python/)
 
 
-Learn how to analyze data using multi-dimensional arrays in NumPy and manipulate DataFrames in pandas using Jupyter-based environment.
+Learn how to prepare data for analysis, perform simple statistical analyses, create meaningful data visualizations, predict future trends from data using Jupyter-based environment.
 
 
 # [Outline](https://github.com/aymanibrahim/dapy/blob/master/notebooks/00_Outline.ipynb)
 The workshop will cover core topics:
 
 ## [01 Intro](https://github.com/aymanibrahim/dapy/blob/master/notebooks/01_Intro.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aymanibrahim/dapy/blob/master/notebooks/01_Intro.ipynb)
+
+Problem            |  Attributes | Types
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./images/01_Intro/01_problem/01_problem.png)  |  ![](./images/01_Intro/02_data_analysis/05_attributes.png)|  ![](./images/01_Intro/05_insights/01_types.png)
+
 - Understanding the Domain
 - Understanding the Dataset
 - Python package for data science
@@ -26,20 +35,35 @@ The workshop will cover core topics:
 - Basic Insights from Datasets
 
 ## [02 Data Wrangling](https://github.com/aymanibrahim/dapy/blob/master/notebooks/02_Data_Wrangling.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aymanibrahim/dapy/blob/master/notebooks/02_Data_Wrangling.ipynb)
+
+
+Distribution            |  Bins | Histogram
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./figs/02_Wrangling/horsepower_distribution.png)  |  ![](./figs/02_Wrangling/horsepower_bins.png)|  ![](./figs/02_Wrangling/horsepower_histogram.png)
+
 - Identify and Handle Missing Values
 - Data Formatting
-- Data Normalization 
+- Data Normalization Sets
 - Binning
 - Indicator variables
 
 ## [03 EDA](https://github.com/aymanibrahim/dapy/blob/master/notebooks/03_EDA.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aymanibrahim/dapy/blob/master/notebooks/03_EDA.ipynb)
 
+Heatmap            |  Scatterplot | Boxplot
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./figs/03_EDA/05_pearson/correlation_heatmap.png)  |  ![](./figs/03_EDA/05_pearson/positive_correlation_engine_size_price_scatterplot.png)|  ![](.//figs/03_EDA/01_descriptive/drive_wheels_price_box_plot.png)
+
 - Descriptive Statistics
-- Basics of Grouping
+- Basic of Grouping
 - ANOVA
 - Correlation
 
 ## [04 Model Development](https://github.com/aymanibrahim/dapy/blob/master/notebooks/04_Model_Development.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aymanibrahim/dapy/blob/master/notebooks/04_Model_Development.ipynb)
+
+3rd Polynomial            |  Actual/Fitted | 11th Polynomial
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./figs/04_Model_Development/03_polyreg/polynomial_fit_price_highway-mpg_3_order.png)  |  ![](./figs/04_Model_Development/02_visualize/actual_fitted_values_distplot.png)|  ![](./figs/04_Model_Development/03_polyreg/polynomial_fit_price_highway-mpg_11_order.png)
+
 
 - Simple and Multiple Linear Regression
 - Model Evaluation Using Visualization
@@ -48,6 +72,10 @@ The workshop will cover core topics:
 - Prediction and Decision Making
 
 ## [05 Model Evaluation](https://github.com/aymanibrahim/dapy/blob/master/notebooks/05_Model_Evaluation.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aymanibrahim/dapy/blob/master/notebooks/05_Model_Evaluation.ipynb)
+
+5th Polynomial            |  R^2 | 4 Features
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./figs/05_Model_Evaluation/02_select/degree5_poly_horse_power.png)  |  ![](./figs/05_Model_Evaluation/02_select/r_squared_order_horsepower.png)|  ![](./figs/05_Model_Evaluation/02_select/distribution_plot_of_predicted_value_using_test_data_vs_data_distribution_of_test_data_with_4_features__distplot.png)
 
 - Model Evaluation
 - Over-fitting, Under-fitting and Model Selection
