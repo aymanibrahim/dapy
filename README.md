@@ -7,7 +7,7 @@ For people who struggle to start in data analysis with Python
 ![](./images/01_Intro/01_problem/dapy-2.png)
 
 This hands-on in-person workshop is based on 
-[Data Analysis with Python Course by IBM Cognitive Class](https://cognitiveclass.ai/courses/data-analysis-python/)
+[Data Analysis with Python Course by IBM Cognitive Class](https://cognitiveclass.ai/courses/course-v1:CognitiveClass+DA0101EN+v2)
 
 
 Learn how to prepare data for analysis, perform simple statistical analyses, create meaningful data visualizations, predict future trends from data using Jupyter-based environment.
